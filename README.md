@@ -1,11 +1,13 @@
 ## Deploy JSON Server to Vercel
 
-A template to deploy [JSON Server](https://github.com/typicode/json-server) to [Vercel](https://vercel.com), allow you to run fake REST API online!
+A template to deploy [JSON Server](https://github.com/devhasibulislam/json-server-vercel) to [Vercel](https://vercel.com), allow you to run fake REST API online!
 
-Demo from this repository: 
+Demo from this repository:
 
-1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
+1. https://json-server-vercell.vercel.app
+2. https://json-server-vercell.vercel.app/profile
+3. https://json-server-vercell.vercel.app/comments
+4. https://json-server-vercell.vercel.app/api/posts
 
 ![Powered by Vercel](https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg)
 
@@ -22,24 +24,16 @@ Demo from this repository:
 
 ```json
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "posts": [{ "id": 1, "title": "Hello World", "author": "Hasibul Islam" }],
+  "comments": [{ "id": 1, "body": "Initial invention of JSON", "postId": 1 }],
+  "profile": { "name": "Hasibul Islam" }
 }
 ```
-
-## Enable write operations
-
-By default, only GET operation is allowed, thanks to the contribution by [@VicAv99](https://www.github.com/VicAv99) at [#6](https://github.com/kitloong/json-server-vercel/issues/6), we can now enable write operations as well.
 
 You can find the example code in [`api/server.js`](./api/server.js).
 
 ## Reference
 
-1. https://github.com/typicode/json-server
 2. https://vercel.com
-3. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
+1. https://github.com/devhasibulislam/json-server-vercel
+1. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
